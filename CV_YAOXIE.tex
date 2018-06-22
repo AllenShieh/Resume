@@ -1,0 +1,305 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{nopageno}
+%\usepackage{charter}  %果果推荐的衬线字体
+\usepackage[usenames]{color}
+\usepackage[colorlinks,
+            linkcolor=black,
+            urlcolor=black,
+            anchorcolor=black,
+            ]{hyperref}
+\usepackage{lettrine}
+\usepackage{fix-cm}
+
+%\leftmargin=0.25in
+%\oddsidemargin=0.25in
+%\textwidth=6.0in
+%\topmargin=-0.5in
+%\textheight=9.75in
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.2in
+\topmargin=-1.0in
+\textheight=11in
+
+%\leftmargin=0.25in
+%\oddsidemargin=0.25in
+%\textwidth=6.1in
+%\topmargin=-0.8in
+%\textheight=10.5in
+
+\raggedleft
+%\raggedright
+%\setlength{\parindent}{0em}
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.7in}{-0.65in}
+%	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{\large{#1}}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[5]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center} %flushright
+			{\huge \scshape {#1}}\\ \smallskip
+			\url{#2}\\ \smallskip 
+			\href{mailto:#3}{#3}\\ \smallskip
+			{#4}\\ \smallskip
+			{#5}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.65in}{-0.62in}
+%	\begin{changemargin}{-0.4in}{-0.5in}
+		%修改日志2015/11/
+		%08changemargin
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+\newcommand{\contactx}[5]{
+		\begin{changemargin}{-0.8in}{-0.94in}
+%	\begin{changemargin}{-0.75in}{-0.85in}
+		\noindent \lettrine[lines=4]{
+			\smallskip \fontsize{32}{32}\selectfont \scshape{#1}}{}
+	\end{changemargin}
+	\begin{changemargin}{-0.5in}{-0.6in}
+			\begin{flushright} 
+				{#2}\\ \smallskip
+				\href{mailto:#3}{#3}\\ \smallskip
+				\url{#4}\\ \smallskip
+				\url{#5}\\ \smallskip
+				%{#5}\smallskip
+			\end{flushright}
+	\end{changemargin}
+}
+
+% END RESUME DEFINITIONS
+\begin{document}
+
+\contactx{Yao Xie}{(+1) 310-923-5967}{allenshieh88@gmail.com}{allenshieh.github.io}{https://www.linkedin.com/in/yaoxieallen}
+
+%\header{Objective}
+
+%\begin{body}
+%\vspace{14pt}
+%Looking for 2018 summer Software Engineer Intern.
+%\end{body}
+\smallskip
+\vspace{-4pt}
+
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+
+	\textbf{The University of California, Los Angeles (UCLA)}, Los Angeles, CA \hfill \emph{Sep. 2017 - Present}{} \\
+	\emph{M.S. in Computer Science}, GPA: \textbf{4.0}/4.0 \\
+	
+%	\textbf{Shanghai Jiao Tong University (SJTU)}   \hfill \emph{{Sep.}~2012 -  {Jun.}~2016 (Expected)}{} \\
+%	B.S. in Information Engineering, School of Electronic Information and Electrical Engineering (SEIEE)\\
+%	GPA: Major \textbf{3.77}/4.0 (\textbf{89.15}/100), Overall \textbf{3.70}/4.0 (\textbf{87.69}/100) ~~~~~~Ranking: \textbf{13}/162\\
+	
+	\vspace{4pt}
+	\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China \hfill \emph{Sep. 2013 - Jun. 2017}{} \\
+	\emph{B.S. in Computer Science}, GPA: \textbf{3.83}/4.3, \textit{Teaching Assistant} of Data Structure Course \\
+	
+%	\emph{B.S. in Information Engineering}, GPA: Core 3.77/4.0 (89.15/100), Overall 3.70/4.0 (87.69/10
+	
+%	\textbf{University of Cambridge} \hfill \emph{{Jan.}~2015 -  {Feb.}~2015}{} \\
+%	Cambridge Academic Development Seminar -- Engineering, The Excellence Scholarship (Top 10\%)
+	
+\end{body}
+
+\smallskip
+\vspace{-4pt}
+
+\header{Technical Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Programming Languages:\hspace{10pt}}C/C++, C\#, Python, JAVA, MATLAB, \LaTeX, SQL\\
+	\textbf{Platforms:\hspace{85pt}}Windows, Linux, Visual Studio, Android Studio\\
+	
+\end{body}
+
+\smallskip
+\vspace{-4pt}
+
+\header{Internship}
+
+\begin{body}
+	\vspace{14pt}
+	
+	\textbf{Microsoft, APGC CSS} \hfill \emph{Jun.~2016 - Sep.~2016} \\
+	\textit{Support Engineer Intern} 
+	\vspace*{-5pt}
+	\vspace*{2pt}
+	\begin{itemize} \itemsep -0pt		
+		
+		\item Provided technical solutions to Microsoft core product System Center Configuration Manager by debugging, log tracing, and error reproducing.
+		\item Created reports using SQL in Visual Studio for personnel information retrieval.
+		\item Won $1^{st}$ place (Project Mr. Chorder) in Microsoft Young Hackathon at Shanghai site.
+	\end{itemize}
+
+
+\end{body}
+
+\smallskip
+\vspace{-8pt}
+
+\header{Projects}
+
+\begin{body}
+	\vspace{14pt}
+	
+	\textbf{High-definition Video Wireless Transmission Optimization (C++, MATLAB, Python)} \hfill \emph{Apr.~2017 - Jun.~2017}
+	\vspace*{-5pt}
+	\begin{itemize} \itemsep -0pt		
+		
+		\item Developed an optimal relay location algorithm using Tensor Recovery in MATLAB for high-definition video wireless transmission where obstructions exist.
+		\item Implemented a three-end system on three laptops (sender, relay, receiver) using C++ and a Python-controlled Roomba iRobot for real-life application.
+		\item Achieved up to 5 times better performance in relay quality, stability than traditional solutions, and demonstrated the ability to environment adjustment.
+	\end{itemize}
+	
+	\vspace{-2pt}
+	
+	\textbf{Mr. Chorder, A Music File-to-Score Transformer (C\#)} \hfill \emph{Aug.~2016}
+	\vspace*{-5pt}
+	\begin{itemize} \itemsep -0pt		
+		
+		\item Implemented the music score prediction module using Decision Tree (a machine learning method).
+		\item Implemented a PDF render library for music scores using iTextSharp.
+	\end{itemize}
+	
+	\vspace{-2pt}	
+	
+	\textbf{Video Based Multi-Object Tracking System (MATLAB)}\hfill \emph{Oct.~2015 - Dec.~2015}\\
+%	\textbf{Cuisine Categorization based on Recipe Ingredients (Python)}\\
+%	\textbf{Data mining theory and application}\\
+	\vspace*{-5pt}
+	\begin{itemize} \itemsep -0pt		
+	  
+      \item Developed a software system that could track multiple people in videos, and output the marked videos.
+      \item Implemented modules for user registration/login, video analysis, video save/review.
+      
+%	\item Solved multi-label classification problem (cuisine categorization based on recipe ingredients) with xxx model and hyper-parameter tuning.
+	\end{itemize}
+	
+	\vspace{-2pt}
+
+	\textbf{Android Based Car Controlling (JAVA)} \hfill \emph{Oct.~2015 - Dec.~2015}
+	\vspace*{-5pt}
+	\begin{itemize} \itemsep -0pt		
+		
+	\item Developed an android application that could control the movement of a toy car through Bluetooth.
+	\item Implemented multiple controlling methods, such as voice recognition (using iFLYTEK Open Platform speech technology), screen gesture, gravity (using Gyro/Acceleration sensors).		
+	\end{itemize}
+\vspace{-2pt}
+%还需要充实充实！
+%\textbf{Parkour Game Development Based on Artificial Intelligence (C++)} \hfill \emph{Sep.~2015 -  Dec.~2015}\\
+%\vspace*{-5pt}
+%\begin{itemize} \itemsep -0pt
+	%		\item Designed and built an original parkour game by \textit{Cocos2d-x} and \textit{Visual Studio} in C++.
+%	\item Built a parkour game by Cocos2d-x; designed and drew game scenes, characters' images and animation.
+%	\item Implemented Artificial Intelligence module with Behavior Tree, applied Game Theory to optimize difficulty level.
+	%		\item Draw game scenes and characters' images by \textit{AI} and \textit{PS}, build animation by \textit{Maya}.
+	%	\item (Left for further work.)
+	
+%\end{itemize}  
+
+%	\vspace{-2pt}
+
+	\textbf{Game 2048, New Version of A Mobile Game (C++)} \hfill \emph{Jul.~2014 - {Aug.}~2014}\\
+	\vspace*{-5pt}
+	\begin{itemize} \itemsep -0pt 
+		\item Implemented a desktop verision of the popular mobile game 2048 from scratch.
+		\item Implemented additional functions, such as music/theme changing, alternative modes, etc.
+	\end{itemize} 
+	
+
+	
+\end{body}
+
+\smallskip
+\vspace{-8pt}
+
+\header{Publications}
+
+\begin{body}
+	\vspace{14pt}
+	
+\textbf{Paper: Yao Xie}, Xiao-Yang Liu, Linghe Kong, Fan Wu, Guihai Chen, Athanasios V. Vasilakos, \textit{"Drone-Based Wireless Relay using Online Tensor Update"}, IEEE International Conference on Parallel and Distributed Systems (\textbf{ICPADS}), 2016.\\
+\textbf{Patent}: Linghe Kong, \textbf{Yao Xie}, Fan Wu, Yifeng Cao, Xiao-Yang Liu, Guihai Chen, \textit{"Drone-Based Optimal Relay Locating Method and System"}, public, China, 2016.
+
+\end{body}
+
+\smallskip
+\smallskip
+\vspace{-8pt}
+
+\header{Honors \& Awards}
+
+\begin{body}
+	\vspace{14pt}
+
+	Excellent Graduate of SJTU\hfill \emph{Jun. 2017}\\
+%	\smallskip
+	
+	CCF Certified Software Professionals (Top 3.61\%)\hfill \emph{Sep. 2015}\\
+
+%	\smallskip
+
+	Meritorious Winner (acceptance 9\%), Mathematical Contest in Modeling  \hfill  \emph{Apr. 2015}\\
+%	\smallskip
+	
+	Scholarship for Academic Excellence, SJTU \hfill \emph{Nov. 2014, 2015, 2016}\\
+	
+%	\smallskip
+	Arawana Scholarship (total 30 students at SJTU) \hfill \emph{Nov. 2014}
+	
+
+\end{body}
+
+
+\end{document}
